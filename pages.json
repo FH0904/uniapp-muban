@@ -1,0 +1,78 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	    {
+            "path" : "pages/tabbar/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "首页",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabbar/profile",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	// 分包
+	// "subPackages":[
+	// 	{
+	// 		"root":"pages/index/",
+	// 		"pages":[
+	// 			{
+	// 				"path":"detail",
+	// 				"style":{
+	// 			        "navigationBarTitleText": "详情",
+	// 			        "enablePullDownRefresh": false
+	// 			    }
+	// 			}
+	// 		]
+	// 	},
+	// 	{
+	// 		"root":"pages/profile",
+	// 		"pages":[
+	// 			{
+	// 				"path":"set",
+	// 				"style":{
+	// 				    "navigationBarTitleText": "设置",
+	// 				    "enablePullDownRefresh": false
+	// 				}
+	// 			}
+	// 		]
+	// 	}
+	// ],
+	"tabBar": {
+		"custom": true,
+		"color": "#2F3030",
+		"selectedColor": "#1580AD",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/tabbar/index",
+				"text": "首页",
+				"iconPath": "static/images/tabbar/icon_nav_home.png",
+				"selectedIconPath": "static/images/tabbar/icon_nav_home_pre.png"
+			},
+			{
+				"pagePath": "pages/tabbar/profile",
+				"text": "个人中心",
+				"iconPath": "static/images/tabbar/icon_nav_user.png",
+				"selectedIconPath": "static/images/tabbar/icon_nav_user_pre.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	}
+}
