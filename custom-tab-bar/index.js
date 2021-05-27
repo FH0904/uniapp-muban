@@ -3,7 +3,7 @@ Component({
     selected: 0,
     "color": "#2F3030",
     "selectedColor": "#1580AD",
-	isShowTu: false,
+	isShowTu: true,
     list: [{
         "pagePath": "/pages/tabbar/index",
         "text": "首页",

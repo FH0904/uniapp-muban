@@ -25,10 +25,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.u-grid.data-v-50bc7b32 {
-  width: 100%;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
+.u-line.data-v-e778bab2 {
+  vertical-align: middle;
 }
 
