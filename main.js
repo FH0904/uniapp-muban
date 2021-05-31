@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import uView from "uview-ui";
 import App from './App'
+import http from './service/methods.js'
 
 Vue.config.productionTip = false
 
 App.mpType = 'app'
+
+// 全局注册http方法
+Vue.prototype.$http = http
 
 // 引入uview
 Vue.use(uView);
