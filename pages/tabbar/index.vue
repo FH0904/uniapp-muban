@@ -132,6 +132,7 @@
 		},
 		onLoad() {
 			this.addRandomData();
+			this.login()
 		},
 		onReachBottom() {
 			this.loadStatus = 'loading';
@@ -156,6 +157,11 @@
 			},
 			clear() {
 				this.$refs.uWaterfall.clear();
+			},
+			async login() {
+				let res = await this.$http.login({
+					
+				})
 			}
 		}
 	}
