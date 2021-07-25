@@ -52,36 +52,6 @@
 <style lang="scss">
 	/*每个页面公共css */
 	@import "uview-ui/index.scss";
-	
-	page {
-		background-color: #f5f5f5;
-	}
-	/**div显示固定行数**/
-	.only-line-2{
-	    overflow: hidden;
-	    text-overflow: ellipsis;
-	    display: -webkit-box;
-	    -webkit-line-clamp: 2;
-	    line-clamp: 2;
-	    -webkit-box-orient: vertical;
-	    text-overflow: -o-ellipsis-lastline;
-	}
-	.only-line-1{
-	    overflow: hidden;
-	    text-overflow: ellipsis;
-	    display: -webkit-box;
-	    -webkit-line-clamp: 1;
-	    line-clamp: 1;
-	    -webkit-box-orient: vertical;
-	    text-overflow: -o-ellipsis-lastline;
-	}
-	.only-line-3{
-	    overflow: hidden;
-	    text-overflow: ellipsis;
-	    display: -webkit-box;
-	    -webkit-line-clamp: 3;
-	    line-clamp: 3;
-	    -webkit-box-orient: vertical;
-	    text-overflow: -o-ellipsis-lastline;
-	}
+	@import "/static/css/fh-main.css";
+	@import "/static/css/animate.css";
 </style>
